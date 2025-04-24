@@ -1,3 +1,9 @@
 .main{
-    background-color: blue;
+    border-color: blue;
+    display: flexbox;
+    align-content: center;
+}
+
+.main > h1{
+    align-self: center;
 }

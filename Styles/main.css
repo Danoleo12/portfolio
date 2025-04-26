@@ -1,9 +1,20 @@
 .main{
-    border-color: blue;
+    background-color: blue;
     display: flexbox;
-    align-content: center;
+    margin: 0 auto;
+    text-align: center;
+    min-height: max-content;
 }
-
-.main > h1{
-    align-self: center;
+#home-header{
+    height: 100px;
+    position: absolute;
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Four columns with equal width */
+    grid-template-rows: 1fr 1fr 1fr 1fr;   /* One rows with equal height */
+    gap: 10px; /* Adds space between items */
 }
+#li1{grid-area: 1 / 1 / 2 / 2;}
+#li2{grid-area: 2 / 2 / 3/ 3;}
+#li3{grid-area: 3 / 3 / 4 / 4;}
+#li4{grid-area: 4 / 4 / 5 / 5;}

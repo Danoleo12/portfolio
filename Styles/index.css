@@ -1,0 +1,54 @@
+header{
+    background-color: white;
+    text-decoration: black;
+    width:auto;
+    height: 150px;
+    margin-bottom: 30px;
+}
+#navLink{
+    padding: 100px; 
+}
+#li1, #li2{
+    float:left;
+}
+#li1{
+    margin-right: 50px;
+}
+#li2{
+    margin-left: 150px;
+    margin-right: 200px;
+}
+#li3, #li4{
+    float: right;
+    margin-right: 150px;
+}
+#li4{
+    margin-right: 150px;
+}
+#search{
+    float: right;
+    padding: 2px;
+}
+ul{
+    list-style-type: none;
+}
+
+main{
+    text-align: center;
+    align-content: center;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+main > p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+a:hover{
+    background-color: white;
+    color: rgb(6, 59, 6);
+    font-size: larger;
+}

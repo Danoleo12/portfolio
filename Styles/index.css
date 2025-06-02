@@ -32,6 +32,7 @@ header>nav{
 #search{
     float: right;
     padding: 2px;
+    background-color: transparent;
 }
 nav>ul{
     list-style-type: none;
@@ -57,4 +58,14 @@ a:hover{
     background-color: rgb(29, 41, 8);
     color: rgb(6, 59, 6);
     font-size: larger;
+}
+#music{
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
 }

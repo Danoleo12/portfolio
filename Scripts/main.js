@@ -1,3 +1,4 @@
+alert("Double click on triangle button to play music");
 document.getElementById("year").textContent = new Date().getFullYear();
 
 function addEvent(){

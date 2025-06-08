@@ -56,7 +56,7 @@ a{
 a:hover{
     background-color: rgb(29, 41, 8);
     color: rgb(6, 59, 6);
-    font-size: larger;
+    font-size:x-large;
 }
 #music{
     width: 20px;
@@ -68,3 +68,4 @@ a:hover{
     font-size: 16px;
     cursor: pointer;
 }
+

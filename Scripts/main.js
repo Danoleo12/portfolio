@@ -3,9 +3,10 @@ if(userName == null || userName == ""){
     alert("No name provided");
 } else {
     document.querySelector("h1").textContent = "Hello " + userName + " I am Danick";
+    alert("Hi " + userName + "\nDouble click on triangle button to play the background music");
 }
 
-alert("Double click on triangle button to play music");
+
 document.getElementById("year").textContent = new Date().getFullYear();
 
 function addEvent(){

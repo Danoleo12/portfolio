@@ -9,29 +9,26 @@
         <header id="home-header">
             <nav id="navLink">
                 <ul>
-                    <li>
-                        <input type="button" name="search" id="search" value="search"></input>
-                        <input type="search" name="search" id="search" placeholder="Search"></input>
-                    </li>
-                    <li id="li1"><a href="index.html">About Me</a></li>
-                    <li id="li2"><a href="academics.html">Skills / Projects</a></li>
-                    <li id="li3"><a href="academics.html">Work History</a></li>
-                    <li id="li4"><a href="contact.html">Contact</a></li>
+                    <li id="li1"><a href="#about">About Me</a></li>
+                    <li id="li2"><a href="#projects">Skills / Projects</a></li>
+                    <li id="li3"><a href=#work"academics.html">Work History</a></li>
+                    <li id="li4"><a href="#contact">Contact</a></li>
+                    
                 </ul>
             </nav>
         </header>
         <main class="main">
             <audio id="audio" src="C:\Users\yamdj\git\Portfolio\Multimedia\Daydreams-chosic.mp3"></audio>
             <div onclick="addEvent()" id = "music" title="Double Click to play music"></div>
-            <h1>Hi I am Danick</h1>
+            <h1 id="about">Hi I am Danick</h1>
             <p>A developer fueled by a love for coding, gaming, and all things web-related. My journey has been shaped by my enthusiasm for Java programming, web development, and exploring the endless possibilities of databases and SQL.
             </p>
             <p>While design isn't my forte, I'm passionate about creating functional, well-structured solutions that deliver real value. Whether it's building dynamic websites or optimizing database workflows, I thrive on solving problems and turning ideas into reality</p>
             <p>When I'm not knee-deep in code, you'll find me immersed in gaming exploring new worlds and sharpening my strategic skills. My goal is to keep growing as a developer, refine my expertise, and collaborate with others to bring projects to life
             </p>
-            <p>Feel free to use the <a href="#navLink">navigation</a> to navigate my portfolio and reach out. Let's <a href="contact.html">connect</a> and work on something incredible together!</p>
+            <p>Feel free to use the navigation to navigate my portfolio and reach out. Let's <a href="#contact">connect</a> and work on something incredible together!</p>
 
-            <h1>Some of my projects</h1>
+            <h1 id="projects">Some of my projects</h1>
             <ul>
                 <li><h2>login/SignIn</h2></li>
                 <p></p>
@@ -52,7 +49,7 @@
                 </p>
             </ul>
 
-            <h2>My Work History</h2>
+            <h2 id="work">My Work History</h2>
             <ul>
                 <li>I got my first part time job in <b>November 2022</b> with <a href="https://gdi.com/" target="_blank" rel="noopener noreferrer">GDI Integrated Services</a> as a janitor. There, I have learnt to work within a team. Even though the work wasn't too formal, I have learnt how to express myself within a work place and how to share my ideas with my teammates and my supervisors
                 I have Kept that position until the end of <b>October 2023</b></li>
@@ -61,17 +58,19 @@
                 <li>This seems irrelevant but why do I add it here? Well those position not only give me the teamwork skills I have, But also helped improve my confidence when expressing myself in english.</li>
             </ul>
 
-
+            <h2>Skills</h2>
             <div class="scroll-container">
                 <div class="scroll-content">
-                    <!-- Add wide content here -->
                     <p>Java     HTML     CSS     JavaScript     Git(version control)     GitHub (Repository host)     Code     Editors     &     IDEs (VsCode, IntelliJ, Eclipse, CLion)     French (Native),     English (Fluent)</p>
                 </div>
             </div>
         </main>
+        <footer>
+            <p>© <span id="year"></span> Danick's Creations. All rights reserved.</p>
+            <div id="contact">
+
+            </div>
+        </footer>
     </body>
-    <footer>
-        <p>© <span id="year"></span> Danick's Creations. All rights reserved.</p>
-    </footer>
     <script src="C:\Users\yamdj\git\Portfolio\Scripts\main.js"></script>
 </html>

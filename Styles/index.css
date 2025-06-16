@@ -130,6 +130,11 @@ ul{
 
 @media only screen and (max-width: 600px) {
 
+    nav li{
+        width: 25%;
+        padding: 5px;
+        margin-bottom: 0;
+    }
     header>nav{
         display: flex;
         flex-direction: column;

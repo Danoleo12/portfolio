@@ -10,6 +10,24 @@ header{
     justify-content: center;
     align-content: space-between;
 }
+#me{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    float: inline-end;
+}
+#me{
+  transition: all 0.3s ease-in-out;
+}
+
+#me:hover{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.Multimedia{
+    height: 90px;
+}
 nav{
     background-color: rgb(41, 58, 12);
     width: 100%;
@@ -37,11 +55,7 @@ footer{
     width : 20%;
     float: right;
 }
-#search{
-    float: right;
-    padding: 2px;
-    background-color: transparent;
-}
+
 nav a{
     color: rgb(140, 171, 25);
 }
@@ -131,10 +145,9 @@ ul{
 @media only screen and (max-width: 600px) {
 
     nav li{
-        width: 25%;
-        padding: 5px;
         margin-bottom: 0;
     }
+    
     header>nav{
         display: flex;
         flex-direction: column;
@@ -142,6 +155,8 @@ ul{
     }
     main{
         align-content: center;
+        width: 90%;
+        margin: 0 auto;
         padding-top: 50px;
         padding-bottom: 50px;
     }

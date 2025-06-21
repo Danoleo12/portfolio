@@ -1,6 +1,6 @@
-<!DOCTYPE html lang="en">
+<!DOCTYPE html lang="english">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<title>Home</title>
     	<link rel="stylesheet" type="text/css" href="C:\Users\yamdj\git\Portfolio\Styles\index.css">
@@ -10,16 +10,21 @@
             <nav id="navLink">
                 <ul>
                     <li id="li1"><a href="#about">About Me</a></li>
-                    <li id="li2"><a href="#projects">Skills / Projects</a></li>
-                    <li id="li3"><a href=#work"academics.html">Work History</a></li>
-                    <li id="li4"><a href="#contact">Contact</a></li>
+                    <li id="li2"><a href="#projects">Projects</a></li>
+                    <li id="li3"><a href="#work">Work History</a></li>
+                    <li id="li4"><a href="#skills">Skills</a></li>
+                    <li id="li5"><a href="#contact">Contact</a></li>
                     
                 </ul>
             </nav>
         </header>
         <main class="main">
-            <audio id="audio" src="C:\Users\yamdj\git\Portfolio\Multimedia\Daydreams-chosic.mp3"></audio>
-            <div onclick="addEvent()" id = "music" title="Double Click to play music"></div>
+            <div class="Multimedia">
+                <audio id="audio" src="C:\Users\yamdj\git\Portfolio\Multimedia\Daydreams-chosic.mp3"></audio>
+                <button onclick="addEvent()" type="button" id = "music" title="Double Click to play music"></button>
+                <img id ="me" src="C:\Users\yamdj\git\Portfolio\Multimedia\me.jpg" title="Image of myself">
+            </div>
+            
             <h1 id="about">Hi I am Danick</h1>
             <p>A developer fueled by a love for coding, gaming, and all things web-related. My journey has been shaped by my enthusiasm for Java programming, web development, and exploring the endless possibilities of databases and SQL.
             </p>
@@ -30,47 +35,49 @@
 
             <h1 id="projects">Some of my projects</h1>
             <ul>
-                <li><h2>login/SignIn</h2></li>
+                <li><h2><a href="C:\Users\yamdj\git\HTML_CSS_JS\login_Signin\log In.html" title="Link will open in a new tab" target="_blank" rel="noopener noreferrer">login/SignIn</a></h2></li>
                 <p></p>
                 <p>Languages:
                     <ul>
                         <li>HTML for the content of the pages</li>
                         <li>CSS for styling</li>
-                        <li>JavaScript for visual effects, Password verification and windows alerts</li>
+                        <li>JavaScript for visual effects, Password verification and windows alerts.</li>
                     </ul>
                 </p>
-                <li><h2>Piano</h2></li>
-                <p>This is a project I worked on while learning Web development on <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">Free Code Camp</a></p>
+                <li><h2><a href="C:\Users\yamdj\git\HTML_CSS_JS\piano\index.html" title="Link will open in a new tab" target="_blank" rel="noopener noreferrer">Piano</a></h2></li>
+                <p>This is a project I worked on while learning Web development on <a title="Link will open in a new tab" href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">Free Code Camp</a></p>
                 <p>Languages:
                     <ul>
                         <li>HTML for the content of the pages</li>
-                        <li>CSS for styling</li>
+                        <li>CSS for styling.</li>
                     </ul>
                 </p>
             </ul>
 
             <h2 id="work">My Work History</h2>
             <ul>
-                <li>I got my first part time job in <b>November 2022</b> with <a href="https://gdi.com/" target="_blank" rel="noopener noreferrer">GDI Integrated Services</a> as a janitor. There, I have learnt to work within a team. Even though the work wasn't too formal, I have learnt how to express myself within a work place and how to share my ideas with my teammates and my supervisors
-                I have Kept that position until the end of <b>October 2023</b></li>
-                <li>I came back to same company on <b>October 2024</b> as a team Lead. Here is where I have learnt and applied how to handle a team and build strong connections with customer, teammates and management. <b>April 2024</b>. GDI lost their contract with the GWL and comes the <b>LAY OFF.</b></li>
-                <li>Thanks to the <a href="https://seiulocal2.ca/" target="_blank" rel="noopener noreferrer">SEIU</a>, a union representing and fighting for janitor's right, Most of us (Current unionised workers), have been accepted by the new company: <a href="https://bee-clean.com/"><b>Bee-Clean Building Maintenance.</b></a> From <b>April 14th</b> I am a resposible of a team of 10 janitors.</li>
+                <li>I got my first part time job in <b>November 2022</b> with <a title="Link will open in a new tab" href="https://gdi.com/" target="_blank" rel="noopener noreferrer">GDI Integrated Services</a> as a janitor. There, I have learnt to work within a team. Even though the work wasn't too formal, I have learnt how to express myself within a work place and how to share my ideas with my teammates and my supervisors
+                I have Kept that position until the end of <b>October 2023.</b></li>
+                <li>I came back to same company on <b>October 2024</b> as a team Lead. Here is where I have learnt and applied how to handle a team and build strong connections with customer, teammates and management. <b>April 2024</b>, GDI lost their contract with the GWL and comes the <b>LAY OFF.</b></li>
+                <li>Thanks to the <a title="Link will open in a new tab" href="https://seiulocal2.ca/" target="_blank" rel="noopener noreferrer">SEIU</a>, a union representing and fighting for janitor's right, most of us (Current unionised workers), have been accepted by the new company: <a title="Link will open in a new tab" href="https://bee-clean.com/"><b>Bee-Clean Building Maintenance.</b></a> From <b>April 14th</b> I am a resposible of a team of 10 janitors.</li>
                 <li>This seems irrelevant but why do I add it here? Well those position not only give me the teamwork skills I have, But also helped improve my confidence when expressing myself in english.</li>
             </ul>
 
-            <h2>Skills</h2>
+            <h2 id="skills">Skills</h2>
             <div class="scroll-container">
                 <div class="scroll-content">
-                    <p>Java     HTML     CSS     JavaScript     Git(version control)     GitHub (Repository host)     Code     Editors     &     IDEs (VsCode, IntelliJ, Eclipse, CLion)     French (Native),     English (Fluent)</p>
+                    <p>Java, HTML, CSS, JavaScript, Git(version control), GitHub (Repository host), Cod Editor & IDEs (VsCode, IntelliJ, Eclipse, CLion), French (Native), English (Fluent)</p>
                 </div>
             </div>
         </main>
-        <footer>
-            <p>© <span id="year"></span> Danick's Creations. All rights reserved.</p>
-            <div id="contact">
+        
+            <footer>
+                <p>© <span id="year"></span> Danick's Creations. All rights reserved.</p>
+                <div id="contact">
 
-            </div>
-        </footer>
+                </div>
+            </footer>
+        
     </body>
     <script src="C:\Users\yamdj\git\Portfolio\Scripts\main.js"></script>
 </html>

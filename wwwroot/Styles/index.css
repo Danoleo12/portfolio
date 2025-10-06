@@ -1,6 +1,7 @@
 body{
-    background-color: #5d3c20;
-    color: rgb(142, 157, 85);
+    /*background: linear-gradient(to center, #ab6c34, #414120);*/
+    background: radial-gradient(ellipse at center, #b59a69 0%, #ab6c34 40%, #414120 100%);
+    color: rgb(41, 46, 23);
     margin: 0;
     padding: 0;
 }
@@ -16,7 +17,7 @@ header{
 }
 
 #setup{
-    width: 60%;
+    width: 100%;
     align-self: center;
 }
 
@@ -28,10 +29,12 @@ nav{
 }
 
 footer{
+    align-content: center;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
     color: rgb(140, 171, 25);
-    width: 100%;
-    height: auto;
-    align-items: center;
 }
 
 #li1, #li2{
@@ -63,6 +66,27 @@ main{
     padding-bottom: 50px;
 }
 
+/* contact{
+    align-items: center;
+    align-self: center;
+} */
+
+.contact-image {
+  width: 40px;
+  height: 40px;
+  padding: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  /* align-self: center; */
+}
+
+.contact-image:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  cursor: pointer;
+  background-color: none;
+}
+
 p, li{
     font-size: 20px;
     margin-bottom: 20px;
@@ -71,7 +95,7 @@ p, li{
 a{
     color: rgb(47, 51, 31);
 }
-a:hover{
+a:not(.contactImage){
     background-color: rgb(29, 41, 8);
     color: rgb(78, 151, 78);
 }
@@ -83,7 +107,6 @@ ul{
   overflow-x: auto;
   white-space: nowrap;
   border: 1px solid #ccc;
-  /*border-radius: 0% 50% 50% 0%;*/
   padding: 10px;
 }
 
@@ -111,12 +134,8 @@ ul{
 .scroll-container {
   overflow-x: auto;
   white-space: nowrap;
-
-  /* Hide scrollbar for most browsers */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE and Edge */
-
-  /* Hide scrollbar for Chrome, Safari, and Opera */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 .scroll-container::-webkit-scrollbar {
   display: none;

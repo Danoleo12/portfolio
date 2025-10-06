@@ -1,6 +1,6 @@
 body{
-    background-color: rgb(240, 242, 236);
-    color: rgb(59, 74, 3);
+    background-color: #5d3c20;
+    color: rgb(142, 157, 85);
     margin: 0;
     padding: 0;
 }
@@ -11,23 +11,15 @@ header{
     align-content: space-between;
 }
 #me{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    float: inline-end;
-}
-#me{
-  transition: all 0.3s ease-in-out;
+    width: 100%;
+    align-self: center;
 }
 
-#me:hover{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+#setup{
+    width: 60%;
+    align-self: center;
 }
-.Multimedia{
-    height: 90px;
-}
+
 nav{
     background-color: rgb(41, 58, 12);
     width: 100%;
@@ -36,10 +28,10 @@ nav{
 }
 
 footer{
-    background-color: rgb(41, 58, 12);
     color: rgb(140, 171, 25);
     width: 100%;
     height: auto;
+    align-items: center;
 }
 
 #li1, #li2{
@@ -83,21 +75,9 @@ a:hover{
     background-color: rgb(29, 41, 8);
     color: rgb(78, 151, 78);
 }
-#music{
-    width: 20px;
-    height: 20px;
-    background-color: green;
-    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
 ul{
     list-style: none inside none;
 }
-
-
 .scroll-container {
   width: 100%; /* or any fixed width */
   overflow-x: auto;

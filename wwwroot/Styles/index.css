@@ -1,5 +1,4 @@
 body{
-    /*background: linear-gradient(to center, #ab6c34, #414120);*/
     background: radial-gradient(ellipse at center, #b59a69 0%, #ab6c34 40%, #414120 100%);
     color: rgb(41, 46, 23);
     margin: 0;
@@ -22,12 +21,12 @@ header{
 }
 
 nav{
-    background-color: rgb(41, 58, 12);
     width: 100%;
     height: auto;
     position: fixed;
     top: 0;
     z-index: 1000;
+    background-color: rgb(34, 44, 34);
 }
 
 footer{
@@ -53,9 +52,6 @@ footer{
     float: right;
 }
 
-nav a{
-    color: rgb(140, 171, 25);
-}
 nav>ul{
     list-style-type: none;
 }
@@ -68,25 +64,24 @@ main{
     padding-bottom: 50px;
 }
 
-/* contact{
-    align-items: center;
-    align-self: center;
-} */
-
 .contact-image {
   width: 40px;
   height: 40px;
-  padding: 40px;
+  padding: 20px;
   border-radius: 50%;
   transition: transform 0.3s ease, opacity 0.3s ease;
   /* align-self: center; */
+}
+
+#contact{
+    margin-top: 10px;
 }
 
 .contact-image:hover {
   transform: scale(1.1);
   opacity: 0.8;
   cursor: pointer;
-  background-color: none;
+  background-color: #292914;
 }
 
 p, li{
@@ -94,12 +89,12 @@ p, li{
     margin-bottom: 20px;
     line-height: 20px;
 }
-a{
-    color: rgb(47, 51, 31);
+a {
+    color: rgb(172, 184, 124);
 }
-a:not(.contactImage){
-    background-color: rgb(29, 41, 8);
-    color: rgb(78, 151, 78);
+a:not(.contactImage):hover {
+    color: rgb(172, 184, 124);
+    background-color: #292914;
 }
 ul{
     list-style: none inside none;

@@ -1,79 +1,143 @@
 <!DOCTYPE html lang="english">
-    <head>
-        <meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="wwwroot\Multimedia\favicon.png" type="image/png">
-    	<title>Home</title>
-    	<link rel="stylesheet" type="text/css" href="wwwroot\Styles\index.css">
-    </head>
-    <body>
-        <header id="home-header">
-            <nav id="navLink">
-                <ul>
-                    <li id="li1"><a href="#about">About Me</a></li>
-                    <li id="li2"><a href="#projects">Projects</a></li>
-                    <li id="li3"><a href="#work">Work History</a></li>
-                    <li id="li4"><a href="#skills">Skills</a></li>
-                    <li id="li5"><a href="#contact">Contact</a></li>
-                    
-                </ul>
-            </nav>
-        </header>
-        <main class="main">
 
-            <img src="wwwroot\Multimedia\Myself.jpg" alt="Picture of Myself" id="me">
-            
-            <h1 id="about">Hi I am Danick</h1>
-            <p>A <strong>Computer Science</strong> student fueled by a love for coding, gaming, and all things programming-related. My journey has been shaped by my enthusiasm for <strong>Software / web development, CyberSecurity and exploring the endless possibilities of databases and SQL</strong>
-            </p>
-            <p>Feel free to use the navigation to navigate my portfolio and reach out. Let's <a href="#contact">connect</a> and work on something incredible together!</p>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="wwwroot\Multimedia\favicon.png" type="image/png">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="wwwroot\Styles\index.css">
+</head>
 
-            <h1 id="projects">Some of my projects</h1>
+<body>
+    <header id="home-header">
+        <nav id="navLink">
             <ul>
-                <li><h2><a href="https://github.com/Danoleo12/HTML_CSS_JS/blob/main/login_Signin/index.html" title="Link will open in a new tab" target="_blank" rel="noopener noreferrer">login/SignIn</a></h2></li>
-                <p></p>
-                <p>Languages:
-                    <ul>
-                        <li>HTML for the content of the pages</li>
-                        <li>CSS for styling</li>
-                        <li>JavaScript for visual effects, Password verification and windows alerts.</li>
-                    </ul>
-                </p>
-            </ul>
+                <li id="li1"><a href="#about">About Me</a></li>
+                <li id="li2"><a href="#projects">Projects</a></li>
+                <li id="li3"><a href="#work">Work History</a></li>
+                <li id="li4"><a href="#skills">Skills</a></li>
+                <li id="li5"><a href="#contact">Contact</a></li>
 
-            <h2 id="work">My Work History</h2>
-            <ul>
-                <li>I am currently enrolled in my university's co-op program and actively looking for a co-op position or an Internship</li>
             </ul>
+        </nav>
+    </header>
+    <main class="main">
 
-            <h2 id="skills">Skills</h2>
-            <div class="scroll-container">
-                <div class="scroll-content">
-                    <p>Java, HTML, CSS, JavaScript, Python</p>
-                    <p>Git(version control), GitHub (Repository host), French (Native), English (Fluent)</p>
+        <img src="wwwroot\Multimedia\Myself.jpg" alt="Picture of Myself" id="me">
+
+        <h1 id="about">Hi I am Danick</h1>
+        <p>A <strong>Computer Science</strong> student fueled by a love for coding, gaming, and all things
+            programming-related. My journey has been shaped by my enthusiasm for <strong>Software / web development,
+                CyberSecurity and exploring the endless possibilities of databases and SQL</strong>
+        </p>
+        <p>Feel free to use the navigation to navigate my portfolio and reach out. Let's <a href="#contact">connect</a>
+            and work on something incredible together!</p>
+
+        <br>
+
+
+        <section id="projects">
+            <h1>Some of my projects</h1>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h2>Login/SignIn</h2>
+                            <video id="signupVideo" src="wwwroot\Multimedia\SignUp_Page.mp4" controls autoplay muted></video>
+                        </div>
+                        <div class="card-back">
+                            <p><strong>Languages:</strong></p>
+                            <ul>
+                                <li>HTML for page structure</li>
+                                <li>CSS for styling</li>
+                                <li>JavaScript for password verification and alerts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat for other projects -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h2>Portfolio Website</h2>
+                            <img src="portfolio-thumbnail.jpg" alt="Portfolio preview">
+                        </div>
+                        <div class="card-back">
+                            <p><strong>Languages:</strong></p>
+                            <ul>
+                                <li>HTML, CSS Grid</li>
+                                <li>JavaScript for interactivity</li>
+                                <li>Responsive design principles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h2>Game Demo</h2>
+                            <video src="game-demo.mp4" controls></video>
+                        </div>
+                        <div class="card-back">
+                            <p><strong>Languages:</strong></p>
+                            <ul>
+                                <li>JavaScript for game logic</li>
+                                <li>Canvas API for rendering</li>
+                                <li>CSS for layout</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </main>
-        
-            <footer>
-                <img src="wwwroot\Multimedia\setUp.png" alt="Picture of My setup" id="setup">
-                <div id="contact">
-                    <a class="contactImage" href="https://www.linkedin.com/in/yamdjio-ditchou-danick-leonel-558896293?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BJTrMUWYDSsOE7dOx0GJN6A%3D%3D">
-                        <img class="contact-image" src="wwwroot\Multimedia\linkedIn.png" alt="LinkedIn">
-                    </a>
-                    <a class="contactImage" href="mailto:D.Ditchou@dal.ca">
-                        <img class="contact-image" src="wwwroot\Multimedia\Outlook.png" alt="Outlook" >
-                    </a>
-                    <a class="contactImage" href="https://github.com/Danoleo12" target="_blank" rel="noopener noreferrer">
-                        <img class="contact-image" src="wwwroot\Multimedia\Github.png" alt="Github" >
-                    </a>
-                </div>
-                <p>© <span id="year"></span> Danick's Creations. All rights reserved.</p>
-                
+        </section>
 
-            </footer>
-        
-    </body>
 
-    <script src="wwwroot\Scripts\main.js"></script>
+
+
+
+
+
+
+
+        <br>
+        <h2 id="skills">Skills</h2>
+        <div class="scroll-container">
+            <div class="scroll-content">
+                <p>Java, HTML, CSS, JavaScript, Python</p>
+                <p>Git(version control), GitHub (Repository host), French (Native), English (Fluent)</p>
+            </div>
+        </div>
+        <br>
+        <h2 id="work">My Work History</h2>
+        <ul>
+            <li>I am currently enrolled in my university's co-op program and actively looking for a co-op position or an
+                Internship</li>
+        </ul>
+    </main>
+
+    <footer>
+        <img src="wwwroot\Multimedia\setUp.png" alt="Picture of My setup" id="setup">
+        <div id="contact">
+            <a class="contactImage"
+                href="https://www.linkedin.com/in/yamdjio-ditchou-danick-leonel-558896293?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BJTrMUWYDSsOE7dOx0GJN6A%3D%3D">
+                <img class="contact-image" src="wwwroot\Multimedia\linkedIn.png" alt="LinkedIn">
+            </a>
+            <a class="contactImage" href="mailto:D.Ditchou@dal.ca">
+                <img class="contact-image" src="wwwroot\Multimedia\Outlook.png" alt="Outlook">
+            </a>
+            <a class="contactImage" href="https://github.com/Danoleo12" target="_blank" rel="noopener noreferrer">
+                <img class="contact-image" src="wwwroot\Multimedia\Github.png" alt="Github">
+            </a>
+        </div>
+        <p>© <span id="year"></span> Danick's Creations. All rights reserved.</p>
+
+
+    </footer>
+
+</body>
+
+<script src="wwwroot\Scripts\main.js"></script>
+
 </html>

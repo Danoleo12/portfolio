@@ -165,6 +165,15 @@ ul{
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
+    footer{
+    align-content: center;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: rgb(215, 219, 198);
+}
 }
 
 

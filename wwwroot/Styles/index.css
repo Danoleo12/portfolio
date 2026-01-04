@@ -142,7 +142,7 @@ ul{
 
     #navLink ul {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 12px; /* spacing between items */
         padding: 0;
         margin: 0;

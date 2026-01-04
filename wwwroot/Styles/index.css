@@ -35,7 +35,7 @@ footer{
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 50px;
-    color: rgb(140, 171, 25);
+    color: rgb(215, 219, 198);
 }
 
 #li1, #li2{
@@ -209,4 +209,19 @@ ul{
   height: auto;
   max-height: 100%;
   object-fit: contain;
+}
+
+.certificate {
+  perspective: 1000px;
+}
+
+#certificates{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+    gap: 20px;
+    padding: 50px;
+}
+#intCyber{
+    width: 100%;
+    align-self: center;
 }

@@ -119,7 +119,7 @@ ul{
 .scroll-content {
   display: inline-block;
   white-space: nowrap;
-  animation: scroll 40s linear infinite;
+  animation: scroll 60s linear infinite;
 }
 
 

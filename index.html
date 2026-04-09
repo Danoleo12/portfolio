@@ -1,145 +1,188 @@
-<!DOCTYPE html lang="english">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="wwwroot\Multimedia\favicon.png" type="image/png">
-    <title>Danick Ditchou</title>
-    <link rel="stylesheet" type="text/css" href="wwwroot\Styles\index.css">
+    <meta name="description" content="Portfolio of Danick Ditchou, a computer science student focused on web, mobile, and cybersecurity projects.">
+    <link rel="icon" href="wwwroot/Multimedia/favicon.png" type="image/png">
+    <title>Danick Ditchou | Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="wwwroot/Styles/index.css">
 </head>
-
 <body>
-    <header id="home-header">
-        <nav id="navLink">
+    <header class="site-header">
+        <nav class="site-nav" id="navLink" aria-label="Primary navigation">
+            <a class="brand" href="#top">Danick Ditchou</a>
             <ul>
-                <li id="li1"><a href="#about">About Me</a></li>
-                <li id="li2"><a href="#projects">Projects</a></li>
-                <li id="li3"><a href="#work">Work History</a></li>
-                <li id="li4"><a href="#skills">Skills</a></li>
-                <li id="li5"><a href="#contact">Contact</a></li>
-
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main class="main">
 
-        <img src="wwwroot\Multimedia\Myself.jpg" alt="Picture of Myself" id="me">
+    <main id="top">
+        <section class="hero" id="about">
+            <div class="hero-copy">
+                <p class="eyebrow">Computer Science Student</p>
+                <h1>Building practical digital experiences with curiosity, structure, and a growing security mindset.</h1>
+                <p class="lead">
+                    I am Danick Ditchou, a developer who enjoys turning ideas into web and software projects.
+                    My focus areas include front-end development, problem solving, and exploring cybersecurity and databases.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">View Projects</a>
+                    <a class="button button-secondary" href="mailto:D.Ditchou@dal.ca">Get In Touch</a>
+                </div>
+                <ul class="highlights" aria-label="Quick highlights">
+                    <li>Web and mobile development foundations</li>
+                    <li>Hands-on Java, JavaScript, Python, and C</li>
+                    <li>Interested in internships and early-career roles</li>
+                </ul>
+            </div>
 
-        <h1 id="about">Hi I am Danick</h1>
-        <p>A <strong>Computer Science</strong> student fueled by a love for coding, gaming, and all things
-            programming-related. My journey has been shaped by my enthusiasm for Mobile app / Web development,
-                exploring the world of CyberSecurity and the endless possibilities of databases
-        </p>
+            <div class="hero-visual">
+                <div class="portrait-card">
+                    <img src="wwwroot/Multimedia/Myself.jpg" alt="Portrait of Danick Ditchou" id="me">
+                </div>
+            </div>
+        </section>
 
-        <section id="projects">
-            <h1>Some of my projects</h1>
-            <p style="color: rgb(97, 19, 19);">Please click on each card for more details</p>
-            <div class="grid">
-                <div class="card">
+        <section class="section section-projects" id="projects">
+            <div class="section-heading">
+                <p class="eyebrow">Selected Work</p>
+                <h2>Projects that show how I learn by building</h2>
+                <p>Flip each card for the technical summary. When supported by your browser, the project demo video will also enter picture-in-picture mode.</p>
+            </div>
+
+            <div class="project-grid">
+                <article class="card" tabindex="0" aria-label="Login and signup project card">
                     <div class="card-inner">
                         <div class="card-front">
-                            <h2>Login/SignUp</h2>
-                            <video id="signupVideo" src="wwwroot\Multimedia\SignUp_Page.mp4" autoplay controls muted></video>
+                            <div class="card-front-copy">
+                                <span class="tag">Web App UI</span>
+                                <h3>Login and Sign Up Flow</h3>
+                                <p>A front-end authentication interface focused on layout, validation, and a polished user flow.</p>
+                            </div>
+                            <video id="signupVideo" src="wwwroot/Multimedia/SignUp_Page.mp4" autoplay controls muted playsinline></video>
                         </div>
                         <div class="card-back">
-                            <p><strong>Languages:</strong></p>
+                            <h3>Tech and Focus</h3>
                             <ul>
                                 <li>HTML for page structure</li>
-                                <li>CSS for styling</li>
-                                <li>JavaScript for password validation, UI alerts, and Picture-in-Picture playback</li>
-                                <li><a href="https://github.com/Danoleo12/HTML_CSS_JS/tree/main/login_Signin" target="_blank" rel="noopener noreferrer">Source code</a></li>
+                                <li>CSS for styling and responsive layout</li>
+                                <li>JavaScript for password validation, alerts, and picture-in-picture playback</li>
+                                <li><a href="https://github.com/Danoleo12/HTML_CSS_JS/tree/main/login_Signin" target="_blank" rel="noopener noreferrer">View source code</a></li>
                             </ul>
                         </div>
                     </div>
-                </div>
+                </article>
 
-
-                <div class="card">
+                <article class="card" tabindex="0" aria-label="Protect Your Edge project card">
                     <div class="card-inner">
                         <div class="card-front">
-                            <h2>Protect Your Edge</h2>
-                            <video id="Edge" src="wwwroot\Multimedia\Protect Your Edge.mp4" autoplay controls muted></video>
+                            <div class="card-front-copy">
+                                <span class="tag">Game Project</span>
+                                <h3>Protect Your Edge</h3>
+                                <p>A Java and Processing game project centered on movement, rendering, and collision-based gameplay.</p>
+                            </div>
+                            <video id="Edge" src="wwwroot/Multimedia/Protect%20Your%20Edge.mp4" autoplay controls muted playsinline></video>
                         </div>
                         <div class="card-back">
-                            <p><strong>Languages:</strong></p>
+                            <h3>Tech and Focus</h3>
                             <ul>
-                                <li>Java for core game logic and collision handling</li>
+                                <li>Java for game logic and collision handling</li>
                                 <li>Processing for rendering and animation</li>
-                                <li><a href="https://github.com/Danoleo12/Java/tree/main/Protect_Your_Edge" target="_blank" rel="noopener noreferrer">Source code</a></li>
+                                <li><a href="https://github.com/Danoleo12/Java/tree/main/Protect_Your_Edge" target="_blank" rel="noopener noreferrer">View source code</a></li>
                             </ul>
                         </div>
                     </div>
-                </div>
-
-                <!-- Repeat for other projects 
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h2>Game Demo</h2>
-                            <video src="game-demo.mp4" controls></video>
-                        </div>
-                        <div class="card-back">
-                            <p><strong>Languages:</strong></p>
-                            <ul>
-                                <li>JavaScript for game logic</li>
-                                <li>Canvas API for rendering</li>
-                                <li>CSS for layout</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>-->
+                </article>
             </div>
         </section>
 
-        <h1>Some of my Certifications</h1>
-        <p style="color: rgb(87, 38, 38);">Please click on the certificates to verify</p>
-        <section id="certificates">
-            
-            <div class="certificate" id="intro">
-                <a href="https://www.credly.com/badges/1ff49fea-4b4b-4929-b598-001dca60ff4e/public_url" target="_blank" rel="noopener noreferrer">
-                    <img class="certpic" src="wwwroot\Multimedia\Intro.png" alt="Introduction to Cybersecurity offered by Information and Communications Technology Council (ICTC) through the Cisco Networking Academy program" id="intCyber">
+        <section class="section section-certifications" id="certificates">
+            <div class="section-heading">
+                <p class="eyebrow">Certification</p>
+                <h2>Verified learning in cybersecurity</h2>
+                <p>Select the certificate to open the verification page.</p>
+            </div>
+
+            <div class="certificate-grid">
+                <a class="certificate-card" href="https://www.credly.com/badges/1ff49fea-4b4b-4929-b598-001dca60ff4e/public_url" target="_blank" rel="noopener noreferrer">
+                    <img class="certpic" src="wwwroot/Multimedia/Intro.png" alt="Introduction to Cybersecurity certificate from Cisco Networking Academy and ICTC">
+                    <div class="certificate-copy">
+                        <h3>Introduction to Cybersecurity</h3>
+                        <p>Issued through Cisco Networking Academy in partnership with ICTC.</p>
+                    </div>
                 </a>
-                
             </div>
         </section>
 
-        <h2 id="skills">Skills</h2>
-        <div class="scroll-container">
-            <div class="scroll-content">
-                <p>Programming: Java, JavaScript, HTML, CSS, C (systems programming), Python</p>
-                <p>Tools: Git, GitHub, VS Code, Processing</p>
-                <p>Devellopment: Debugging, documentation, version control workflow</p>
-                <p>Languages: English (fluent), French (fluent)</p>
+        <section class="section section-skills" id="skills">
+            <div class="section-heading">
+                <p class="eyebrow">Capabilities</p>
+                <h2>Current toolkit</h2>
             </div>
-        </div>
-        
-        <h2 id="work">My Work History</h2>
-        <ul>
-            <li>I am looking for a role that will help me strengthen my skills, learn from industry professionals, and begin building my career.</li>
-        </ul>
+
+            <div class="skills-grid">
+                <article class="info-panel">
+                    <h3>Programming</h3>
+                    <p>Java, JavaScript, HTML, CSS, C, Python</p>
+                </article>
+                <article class="info-panel">
+                    <h3>Tools</h3>
+                    <p>Git, GitHub, VS Code, Processing</p>
+                </article>
+                <article class="info-panel">
+                    <h3>Development</h3>
+                    <p>Debugging, documentation, version control workflow</p>
+                </article>
+                <article class="info-panel">
+                    <h3>Languages</h3>
+                    <p>English and French</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section-work" id="work">
+            <div class="section-heading">
+                <p class="eyebrow">Career Goal</p>
+                <h2>Looking for the right place to keep growing</h2>
+            </div>
+
+            <div class="work-card">
+                <p>
+                    I am looking for a role that will help me sharpen my technical skills, learn from experienced professionals,
+                    and contribute to real-world projects while I continue building my career.
+                </p>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <img src="wwwroot\Multimedia\setUp.png" alt="Picture of My setup" id="setup">
-        <div id="contact">
-            <a class="contactImage"
-                href="https://www.linkedin.com/in/yamdjio-ditchou-danick-leonel-558896293?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BJTrMUWYDSsOE7dOx0GJN6A%3D%3D">
-                <img class="contact-image" src="wwwroot\Multimedia\linkedIn.png" alt="LinkedIn">
-            </a>
-            <a class="contactImage" href="mailto:D.Ditchou@dal.ca">
-                <img class="contact-image" src="wwwroot\Multimedia\Outlook.png" alt="Outlook">
-            </a>
-            <a class="contactImage" href="https://github.com/Danoleo12" target="_blank" rel="noopener noreferrer">
-                <img class="contact-image" src="wwwroot\Multimedia\Github.png" alt="Github">
-            </a>
+    <footer class="site-footer">
+        <div class="footer-visual">
+            <img src="wwwroot/Multimedia/setUp.png" alt="Danick's desk setup" id="setup">
         </div>
-        <p >© <span id="year"></span> Danick's Creations. All rights reserved.</p>
-
-
+        <div class="footer-content">
+            <h2>Let's connect</h2>
+            <p>If you are hiring, collaborating, or just want to talk tech, I would be glad to hear from you.</p>
+            <div id="contact" class="contact-links">
+                <a class="contactImage" href="https://www.linkedin.com/in/yamdjio-ditchou-danick-leonel-558896293?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BJTrMUWYDSsOE7dOx0GJN6A%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                    <img class="contact-image" src="wwwroot/Multimedia/linkedIn.png" alt="LinkedIn">
+                </a>
+                <a class="contactImage" href="mailto:D.Ditchou@dal.ca" aria-label="Send email">
+                    <img class="contact-image" src="wwwroot/Multimedia/Outlook.png" alt="Outlook">
+                </a>
+                <a class="contactImage" href="https://github.com/Danoleo12" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                    <img class="contact-image" src="wwwroot/Multimedia/Github.png" alt="GitHub">
+                </a>
+            </div>
+            <p class="copyright">&copy; <span id="year"></span> Danick Ditchou. All rights reserved.</p>
+        </div>
     </footer>
 
+    <script src="wwwroot/Scripts/main.js"></script>
 </body>
-
-<script src="wwwroot\Scripts\main.js"></script>
-
 </html>

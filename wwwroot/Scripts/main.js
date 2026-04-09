@@ -1,27 +1,47 @@
-var userName = prompt("What do I call you?");
-
-document.querySelector("h1").textContent = "Hello " + userName + ", I am Danick";
-
-
 document.getElementById("year").textContent = new Date().getFullYear();
 
-document.querySelectorAll('.card').forEach(card => {
-    card.addEventListener('click', async () => {
-        card.classList.toggle('flipped');
+async function toggleCard(card) {
+    const video = card.querySelector("video");
+    const willFlipOpen = !card.classList.contains("flipped");
 
-        const video = card.querySelector('video');
+    card.classList.toggle("flipped");
 
-        if (card.classList.contains('flipped') && video) {
-            try {
-                await video.play(); // must be playing before PiP
+    if (!video) {
+        return;
+    }
+
+    if (willFlipOpen) {
+        try {
+            await video.play();
+
+            if (document.pictureInPictureEnabled && typeof video.requestPictureInPicture === "function") {
                 await video.requestPictureInPicture();
-            } catch (err) {
-            console.error("PiP failed:", err);
-            } 
+            }
+        } catch (error) {
+            console.error("PiP failed:", error);
         }
 
-        if (!card.classList.contains('flipped') && document.pictureInPictureElement === video) {
+        return;
+    }
+
+    if (document.pictureInPictureElement === video) {
+        try {
             await document.exitPictureInPicture();
+        } catch (error) {
+            console.error("Unable to exit PiP:", error);
+        }
+    }
+}
+
+document.querySelectorAll(".card").forEach((card) => {
+    card.addEventListener("click", () => {
+        toggleCard(card);
+    });
+
+    card.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            toggleCard(card);
         }
     });
 });
